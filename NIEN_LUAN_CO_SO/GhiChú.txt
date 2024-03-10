@@ -1,0 +1,26 @@
+Phiên bản tensorflow: 2.13.0
+Phiên bản OpenCV: 4.7.0
+Phiên bản Python: 3.8.18
+Phiên bản CUDA: 12.3.2
+
+
+
+Class, Images, Instances, Box(P), R, mAP50, mAP50-95: Đây là các chỉ số đánh giá hiệu suất của mô hình:
+
+Class: Lớp đối tượng được phát hiện.
+Images: Số lượng hình ảnh được sử dụng để kiểm tra mô hình.
+Instances: Số lượng thực thể của mỗi lớp xuất hiện trong tập kiểm tra.
+Box(P): Độ chính xác của việc dự đoán hộp giới hạn (bounding box).
+R: Độ nhạy của mô hình (recall), tức là tỷ lệ giữa số lượng true positive và tổng số lượng positive thực sự.
+mAP50: Mean Average Precision với IoU (Intersection over Union) là 0.5.
+mAP50-95: Mean Average Precision trung bình từ IoU 0.5 đến 0.95.
+
+
+
+
+Cài:
+pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+pip install numpy matplotlib tqdm pillow PyYAML scipy opencv-python-headless tensorboard
+pip install torch==1.7.0 torchvision==0.8.1 torchaudio==0.7.0
+pip install git+https://github.com/ultralytics/yolov5.git
+

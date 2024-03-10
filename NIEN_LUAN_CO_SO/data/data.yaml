@@ -1,0 +1,14 @@
+path: E:\NIEN_LUAN_CO_SO/data
+train: E:/NIEN_LUAN_CO_SO/data/train/images
+val: E:/NIEN_LUAN_CO_SO/data/valid/images
+test: E:/NIEN_LUAN_CO_SO/data/test/images
+
+nc: 4
+names: ['Algal Leaf Spot', 'Leaf Blight', 'Leaf Spot', 'No Disease']
+
+roboflow:
+  workspace: new-workspace-7ly0p
+  project: durian-diseases
+  version: 5
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/new-workspace-7ly0p/durian-diseases/dataset/5
